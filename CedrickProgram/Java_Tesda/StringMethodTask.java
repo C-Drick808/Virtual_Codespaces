@@ -6,7 +6,7 @@ public class StringMethodTask {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter a message: ");
+        System.out.print("Enter a message: ");
         String message = scanner.nextLine();
 
         int legthOfString = message.length();
@@ -18,13 +18,11 @@ public class StringMethodTask {
 
         String substringCharacter = message.substring(secondBegin,fifthBegin);
 
-        System.out.println("Find and print the length of the string. " + legthOfString);
-        System.out.println("Convert the string to uppercase and print it. " + message.toUpperCase());
-        System.out.println("Convert the string to lowercase and print it " + message.toLowerCase());
-        System.out.println("Print the first character of the string. " + firstCharacter);
-        System.out.println("Print the last character of the string. " + lastCharacter);
-        System.out.println("Print the substring starting from the second character to the fifth character of the string " + substringCharacter);
-        
+        System.out.println("Find and print the length of the string.\n" + legthOfString);
+        System.out.println("Convert the string to uppercase and print it.\n" + message.toUpperCase());
+        System.out.println("Convert the string to lowercase and print it\n" + message.toLowerCase());
+        System.out.println("Print the first character of the string.\n" + firstCharacter);
+        System.out.println("Print the last character of the string.\n" + lastCharacter);
+        System.out.println("Print the substring starting from the second character to the fifth character of the string.\n" + substringCharacter);
     }
-    
 }
