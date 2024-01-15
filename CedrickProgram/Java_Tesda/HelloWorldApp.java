@@ -1,9 +1,11 @@
+package CedrickProgram.Java_Tesda;
+
 /**
  * HelloWorldApp
  */
 public class HelloWorldApp {
 
     public static void main(String[] args) {
-        System.out.println("Kamusta Mundo!");
+        System.out.println("Hello World!"); // Display the string.
     }
 }
