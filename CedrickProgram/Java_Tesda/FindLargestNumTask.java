@@ -1,5 +1,6 @@
 package CedrickProgram.Java_Tesda;
 
+import java.util.Scanner;
 import java.util.ArrayList;
 
 /**
@@ -7,7 +8,13 @@ import java.util.ArrayList;
  */
 public class FindLargestNumTask {
     public static void main(String[] args) {
-        ArrayList<Integer> arrNumber = new ArrayList<Integer>();
+        
+        Scanner input = new Scanner(System.in);
+        ArrayList<Integer> arrayNumber = new ArrayList<Integer>();
+
+        System.out.println("Enter a number: ");
+        int 
+
         int num1 = 23,num2 = 12, num3 = 90;
         arrNumber.add(num1);
         arrNumber.add(num2);
