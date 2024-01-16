@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * FindLargestNumber
  */
-public class FindLargestNumber {
+public class FindLargestNumTask {
     public static void main(String[] args) {
         ArrayList<Integer> arrNumber = new ArrayList<Integer>();
         int num1 = 23,num2 = 12, num3 = 90;
