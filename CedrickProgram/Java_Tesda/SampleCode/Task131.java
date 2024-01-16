@@ -1,4 +1,4 @@
-package SampleCode;
+package CedrickProgram.Java_Tesda.SampleCode;
 
 class Afritada {
     public void showIngredients() {

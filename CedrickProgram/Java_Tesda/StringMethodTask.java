@@ -8,6 +8,7 @@ public class StringMethodTask {
 
         System.out.print("Enter a message: ");
         String message = scanner.nextLine();
+        scanner.close();
 
         int legthOfString = message.length();
         char firstCharacter = message.charAt(0);
