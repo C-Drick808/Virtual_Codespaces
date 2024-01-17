@@ -38,7 +38,7 @@ public class NumberToDayTask {
                     System.out.println("Sunday");
                     break;
                 case 0:
-                    System.out.println("EXIT TO PROGRAM");
+                    System.out.println("EXIT TO PROGRAM ...");
                     isWeekDays = false;
                     input.close();
                     break;
