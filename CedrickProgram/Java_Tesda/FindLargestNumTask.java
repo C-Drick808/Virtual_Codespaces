@@ -2,10 +2,7 @@ package CedrickProgram.Java_Tesda;
 
 import java.util.Scanner;
 import java.util.ArrayList;
-
-/**
- * FindLargestNumber
- */
+import java.util.Collections;
 public class FindLargestNumTask {
     public static void main(String[] args) {
         
@@ -21,18 +18,16 @@ public class FindLargestNumTask {
         System.out.print("Enter a Third number: ");
         int num3 = input.nextInt();
         arrayNumber.add(num3);
+        String showArrayListElement = arrayNumber.toString();
         input.close();
 
-        int maximum = arrayNumber.get(0);
-        for (int i = 1; i < arrayNumber.size(); i++) {
-            if (maximum < arrayNumber.get(i)){
-                maximum = arrayNumber.get(i);
-                System.out.println("The largest number is : " + maximum);
-            }
-        }
-
-        if (arrayNumber.equals()) {
-            System.out.println("All the numbers are equal");
-        }
+        Collections.sort(arrayNumber);
+        int sortFirstNumber = arrayNumber.getFirst();
+        int sortSecondNumber = arrayNumber.get(1);
+        int sortLastNumber = arrayNumber.getLast();
+        System.out.println("\nThis is the sort arraylist element: "+sortFirstNumber+" "+sortSecondNumber+" "+sortLastNumber);
+        
+        String message = sortFirstNumber == sortLastNumber ? "All the numbers are equal "+showArrayListElement:"The largest number is: "+sortLastNumber+"\n"+showArrayListElement;
+        System.out.println(message);
     }
 }
