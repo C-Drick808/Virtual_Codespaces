@@ -16,7 +16,8 @@ public class PalindromeTask {
         StringBuilder reverseWord = sbWords.reverse();
         String reverseBase = reverseWord.toString();
 
-        boolean isPalindrome = baseWords.equalsIgnoreCase(reverseBase);
-        System.out.println("This is palindrome: " + baseWords + ":" + reverseBase +": " + isPalindrome);
+        //boolean isPalindrome = baseWords.equalsIgnoreCase(reverseBase);
+        String message = baseWords.equalsIgnoreCase(reverseBase) ? "Palindrome":"not palindrome";
+        System.out.println("Plain Word:"+baseWords + " | "+"Reversed Word:"+ reverseBase +": "+"This is "+message);
     }
 }
