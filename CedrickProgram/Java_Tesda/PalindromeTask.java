@@ -7,7 +7,7 @@ public class PalindromeTask {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         
-        System.out.println("Enter a words: ");
+        System.out.print("Enter a words: ");
         String baseWords = input.nextLine();
 
         input.close();
