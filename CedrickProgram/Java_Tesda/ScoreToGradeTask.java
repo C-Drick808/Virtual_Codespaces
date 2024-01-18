@@ -2,7 +2,7 @@ package CedrickProgram.Java_Tesda;
 
 import java.util.Scanner;
 
-public class GradesTask {
+public class ScoreToGradeTask {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("\t // Student Grades Criteria //\n\n");
