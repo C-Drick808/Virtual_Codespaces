@@ -6,7 +6,7 @@ public class OddEvenTask {
     public static void main(String[] args) {
         for (int i = 1; i<= 10; i++) {
             String message;
-            message = (i % 2 == 0) ? i + " is ODD Number" : i + " is EVEN Number";
+            message = (i % 2 == 0) ? i + " is EVEN Number" : i + " is ODD Number";
             System.out.println(message);
         }
     }
