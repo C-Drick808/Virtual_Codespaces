@@ -1,5 +1,5 @@
 package CedrickProgram.Java_Tesda.Task121;
-import CedrickProgram.Java_Tesda.Task121.DateTask;
+
 public class MyDate {
     public static void main(String[] args) {
         DateTask date1 = new DateTask(1,1,1978);
@@ -10,6 +10,6 @@ public class MyDate {
         date2.setYear(1984);
         System.out.println(date2.toString());
        // display leapyears
-       date2.leapYears();
+       DateTask.leapYears();
     }
 }
