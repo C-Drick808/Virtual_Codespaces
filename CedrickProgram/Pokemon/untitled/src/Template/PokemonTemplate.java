@@ -13,8 +13,7 @@ public abstract class PokemonTemplate {
         System.out.println("Pokemon Created");
     }
     private void buildPkStats(){
-        PokemonStats stats = new PokemonStats.Statatistic(45,49,49,
-                65,65,45,318).build();
+        PokemonStats stats = new PokemonStats(10,20,10,20,10,20,10);
         System.out.println(stats.toString());
     }
     public abstract void buildPkTraining();
