@@ -13,8 +13,8 @@ public abstract class PokemonTemplate {
         System.out.println("Pokemon Created");
     }
     private void buildPkStats(){
-        PokemonStats stats = new PokemonStats(10,20,10,20,10,20,10);
-        System.out.println(stats.toString());
+        //PokemonStats stats = new PokemonStats(10,20,10,20,10,20,10);
+       // System.out.println(stats.toString());
     }
     public abstract void buildPkTraining();
     public abstract void buildPkBreed();

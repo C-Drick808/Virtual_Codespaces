@@ -1,13 +1,8 @@
 package Builder;
 
 public class PokemonStats {
-    private int hp;
-    private int attack;
-    private int defense;
-    private int spAttack;
-    private int spDefense;
-    private int speed;
-    private int total;
+/*
+
 
     @Override
     public String toString() {
@@ -74,5 +69,7 @@ public class PokemonStats {
     }
     //Optional
     private boolean isSuperPotion;
+
+ */
 }
 
