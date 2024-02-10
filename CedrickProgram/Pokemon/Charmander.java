@@ -1,34 +1,28 @@
 package CedrickProgram.Pokemon;
 
-public class Charmander extends PokemonLab implements Attack,Fire{
+public class Charmander extends  Wild{
 
-    public Charmander(int id, String name, float height, float weight, char gender,
-                     String category, String abilities) {
+    public Charmander(int id, String name, String type, float height, float weight, char gender,
+                      String category,String abilities, int hp, int attack, int defense, int spAttack, int spDefense, int speed) {
 
-        super(id, name, height, weight, gender, category, abilities);
+        super(id, name, type, height, weight, gender, category, abilities, hp, attack, defense, spAttack, spDefense, speed);
+
     }
-
     public Charmander(){
-        setPokemonData(4,"Charmander",0.7F,6.9F,'M',"Seed Pokemon","Overgrow");
-        setPokemonStats(Fire.hp,Fire.attack,Fire.defense,Fire.spAttack,Fire.spDefense,Fire.speed);
+        super();
+        setId(4);
+        setName("Charmander");
+        setType("Fire");
+        setHeight(0.6F);
+        setWeight(8.5F);
+        setCategory("Lizard Pokemon");
+        setAbilities("Blaze");
+        setHp(39);
+        setAttack(52);
+        setDefense(43);
+        setSpAttack(60);
+        setSpDefense(50);
+        setSpeed(65);
     }
 
-
-
-    @Override
-    public void typeNotEffective() {
-        System.out.println("Yawa");
-    }
-
-    @Override
-    public void typeSuperEffective() {
-
-    }
-
-
-    @Override
-    public String basicAttack() {
-
-        return "Charmander Basicc Attack";
-    }
 }

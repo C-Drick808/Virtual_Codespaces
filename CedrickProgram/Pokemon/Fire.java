@@ -1,6 +1,6 @@
 package CedrickProgram.Pokemon;
 
-public interface Fire extends PokemonType{
+public interface Fire{
 
     int hp = 100;
     int attack = 49;

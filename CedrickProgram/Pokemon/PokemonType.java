@@ -1,6 +1,5 @@
 package CedrickProgram.Pokemon;
 
-public interface PokemonType {
-    void typeNotEffective();
-    void typeSuperEffective();
+public abstract class PokemonType {
+
 }
