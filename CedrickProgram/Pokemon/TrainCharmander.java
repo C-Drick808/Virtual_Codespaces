@@ -3,9 +3,11 @@ package CedrickProgram.Pokemon;
 public interface TrainCharmander {
 
     String name = "Charmander";
-    String tyoe = "Fire";
+    String type = "Fire";
     String categories = "Lizard Pokemon";
     String abilities = "Blaze";
+    char gender = 'M';
+    String trainer = "Java God";
 
     int statsHp = 39;
     int statsAttack = 52;

@@ -17,7 +17,9 @@ public class Bulbasaur extends Wild implements Grass{
     protected static int bulbaSpeed;
 
 
-    public Bulbasaur(int id, String name, String type, float height, float weight, char gender, String category,String abilities, int hp, int attack, int defense, int spAttack, int spDefense, int speed) {
+    public Bulbasaur(int id, String name, String type, float height, float weight,
+                     char gender, String category,String abilities, int hp, int attack,
+                     int defense, int spAttack, int spDefense, int speed) {
 
         super(id, name, type, height, weight, gender, category, abilities, hp, attack, defense, spAttack, spDefense, speed);
 

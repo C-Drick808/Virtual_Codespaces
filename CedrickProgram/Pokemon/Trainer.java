@@ -5,33 +5,44 @@ import java.util.Scanner;
 public class Trainer extends Arena implements TrainCharmander{
     boolean isTurn = false;
     @Override
-    public void duel(String playerName,String pokemonName, String pokemonType, char pokemonGender) {
+    public void duel() {
         Scanner scanner = new Scanner(System.in);
 
         Bulbasaur bulbasaur = new Bulbasaur();
 
-        int HPTrainer1 = bulbasaur.getHp();
-        int HPTrainer2 = statsHp;
-        do {
+        try {
 
-            System.out.println(" - "+playerName);
-            System.out.println(" - "+bulbasaur.getName()+"\t\t\t\t\t - Pokemon Health = "+HPTrainer1);
-            System.out.println(" - "+bulbasaur.getType());
-            System.out.println(" - "+bulbasaur.getGender());
+            int HPTrainer1 = bulbasaur.getHp();
+            int HPTrainer2 = statsHp;
 
-            System.out.println("*******************************************************");
+            do {
 
-            System.out.println(" - "+"Opponent Name");
-            System.out.println(" - "+"Opponent Pokemon Name \t\t - Pokemon Health = "+HPTrainer2);
-            System.out.println(" - "+"Opponent Pokemon Type");
-            System.out.println(" - "+"Opponent Pokemon Gender");
+                if ( HPTrainer1 < 0 || HPTrainer2 < 0){
+                    if (HPTrainer1 > HPTrainer2){
+                        System.out.println("TRAINER 1 Winner");
+                        HPTrainer2 = 0;
+                    }else {
+                        HPTrainer1 = 0;
+                        System.out.println(bulbasaur.getName()+" Health= "+HPTrainer1);
+                        System.out.println(name+" Health= "+HPTrainer2);
+                        System.out.println(trainer+" Trainer 2 and "+name+" Winner");
+                    }
+                    isFainted = true;
+                    throw new IllegalArgumentException("Input cannot be negative");
+                }
 
-            if (HPTrainer1 == 0 || HPTrainer2== 0){
-                System.out.println("\nSomeone pokemon has ben fainted");
-                isFainted = true;
+                System.out.println(" - "+"Cedrick");
+                System.out.println(" - "+bulbasaur.getName()+"\t\t\t\t\t - Pokemon Health = "+HPTrainer1);
+                System.out.println(" - "+bulbasaur.getType());
+                System.out.println(" - "+bulbasaur.getGender());
 
-            }else
-            {
+                System.out.println("*******************************************************");
+
+                System.out.println(" - "+trainer);
+                System.out.println(" - "+name+"\t\t - Pokemon Health = "+HPTrainer2);
+                System.out.println(" - "+type);
+                System.out.println(" - "+gender);
+
                 System.out.println("\n--------------------------------");
                 System.out.println("[1] PRESS 1 TO BASIC ATTACK ");
                 System.out.println("[2] PRESS 2 TO SKILL ATTACK");
@@ -50,10 +61,12 @@ public class Trainer extends Arena implements TrainCharmander{
                             boolean isAttack = false;
                             if (!isAttack){
                                 HPTrainer2 -= bulbasaur.getBasicAttack();
+                                System.out.println("\nBulbasaur basic attack = "+bulbasaur.getBasicAttack());
                                 break;
                             }
                         }
                         HPTrainer1 -= basicAttack();
+                        System.out.println("\nCharmander basic attack = "+basicAttack()+"\n");
                         break;
                     } case 2:{
                         System.out.println("SKILL ATTACK");
@@ -70,14 +83,15 @@ public class Trainer extends Arena implements TrainCharmander{
                         break;
                     }
                 }
-            }
 
-        }while (!isFainted);
-
+            }while (!isFainted);
+        }catch (IllegalArgumentException e){
+            System.out.println("Do you want to contiue ...");
+            e.printStackTrace();
+        }
     }
-
     @Override
     public int basicAttack() {
-        return 8;
+        return 25;
     }
 }
