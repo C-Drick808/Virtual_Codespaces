@@ -2,19 +2,23 @@ package CedrickProgram.Pokemon;
 
 public interface TrainCharmander {
 
-    String name = "Charmander";
-    String type = "Fire";
-    String categories = "Lizard Pokemon";
-    String abilities = "Blaze";
-    char gender = 'M';
+    Charmander charmander = new Charmander();
+    int id = charmander.getId();
+    String name = charmander.getName();
+    String type = charmander.getType();
+    float height = charmander.getHeight();
+    float weight = charmander.getWeight();
+    String categories = charmander.getCategories();
+    String abilities = charmander.getAbilities();
+    char gender = charmander.getGender();
     String trainer = "Java God";
 
-    int statsHp = 39;
-    int statsAttack = 52;
-    int statsDefense = 43;
-    int statsSpAttack = 60;
-    int statsSpDefense = 50;
-    int statsSpeed = 65;
+    int statsHp = charmander.getHp();
+    int statsAttack = charmander.getAttack();
+    int statsDefense = charmander.getDefense();
+    int statsSpAttack = charmander.getSpAttack();
+    int statsSpDefense = charmander.getSpDefense();
+    int statsSpeed = charmander.getSpeed();
     int statsTotal = 309;
 
     int basicAttack();
