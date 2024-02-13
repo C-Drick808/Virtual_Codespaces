@@ -20,6 +20,4 @@ public interface TrainCharmander {
     int statsSpDefense = charmander.getSpDefense();
     int statsSpeed = charmander.getSpeed();
     int statsTotal = 309;
-
-    int basicAttack();
 }

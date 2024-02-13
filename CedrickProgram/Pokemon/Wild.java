@@ -22,7 +22,8 @@ public class Wild extends Pokemon{
     private int speed;
 
 
-    public Wild(int id, String name, String type, float height, float weight, char gender, String category, String abilities, int hp, int attack, int defense, int spAttack, int spDefense, int speed) {
+    public Wild(int id, String name, String type, float height, float weight, char gender,
+                String category, String abilities) {
 
         this.id = id;
         this.name = name;
@@ -32,18 +33,7 @@ public class Wild extends Pokemon{
         this.gender = gender;
         this.category = category;
         this.abilities = abilities;
-        this.hp = hp;
-        this.attack = attack;
-        this.defense = defense;
-        this.spAttack = spAttack;
-        this.spDefense = spDefense;
-        this.speed = speed;
     }
-    protected Wild(){}
-
-
-
-
     @Override
     public void getDescription() {
         System.out.println("POKEMON DESCRIPTION");

@@ -9,4 +9,6 @@ public interface Fire{
     int spDefense = 65;
     int speed = 45;
 
+    int getBasicAttack();
+
 }

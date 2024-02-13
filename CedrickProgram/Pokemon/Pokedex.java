@@ -25,8 +25,6 @@ abstract class Pokedex {
 
     public abstract void insertPokemon();
 
-
-
     @Override
     public String toString() {
         return "POKEDEX {" + " " +

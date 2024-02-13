@@ -1,6 +1,6 @@
 package CedrickProgram.Pokemon;
 
-public class Charmander extends  Wild{
+public class Charmander extends  Wild implements Fire{
 
     public Charmander(int id, String name, String type, float height, float weight, char gender,
                       String category,String abilities, int hp, int attack, int defense, int spAttack, int spDefense, int speed) {
@@ -25,4 +25,8 @@ public class Charmander extends  Wild{
         setSpeed(65);
     }
 
+    @Override
+    public int getBasicAttack() {
+        return 10;
+    }
 }

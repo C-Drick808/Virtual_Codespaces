@@ -1,8 +1,9 @@
 package CedrickProgram.Pokemon;
 
 public interface TrainBulbasaur {
+    Bulbasaur bulbasaur = new Bulbasaur(1,"Bulbasaur","Grass",
+            0.9F,6.2F,'M',"Seed Pokemon","Overgrow");
 
-    Bulbasaur bulbasaur = new Bulbasaur();
     int id = bulbasaur.getId();
     String name = bulbasaur.getName();
     String type = bulbasaur.getType();
@@ -11,8 +12,6 @@ public interface TrainBulbasaur {
     String categories = bulbasaur.getCategories();
     String abilities = bulbasaur.getAbilities();
     char gender = bulbasaur.getGender();
-    String trainer = "Python God";
-
     int statsHp = bulbasaur.getHp();
     int statsAttack = bulbasaur.getAttack();
     int statsDefense = bulbasaur.getDefense();
@@ -20,6 +19,8 @@ public interface TrainBulbasaur {
     int statsSpDefense = bulbasaur.getSpDefense();
     int statsSpeed = bulbasaur.getSpeed();
     int statsTotal = 309;
+
+    int basicDamage = bulbasaur.getBasicAttack();
 
 
 }
